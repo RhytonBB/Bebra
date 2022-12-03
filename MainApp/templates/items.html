@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'items.css' %}">
+<!--     <style>-->
+<!--        .menu{-->
+<!--        border: 1px solid black;-->
+<!--        }-->
+<!--        .content {-->
+<!--        margin-top: 20px;-->
+<!--        margin-botton : 20px;-->
+<!--        footer {border: 1 px solid blue;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+
+    <aside>
+        <h4>Навигация</h4>
+        <ol>
+            <a href="/items/1"><li>{{items.0}}</li></a>
+            <a href="/items/2"><li>{{items.2}}</li></a>
+            <a href="/items/3"><li>{{items.3}}</li></a>
+            <a href="/items/4"><li>{{items.4}}</li></a>
+            <a href="/items/5"><li>{{items.5}}</li></a>
+        </ol>
+
+
+    </aside>
+    <main>
+        <h2>Список товаров</h2>
+    </main>
+
+</body>

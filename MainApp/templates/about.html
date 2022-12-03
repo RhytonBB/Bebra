@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'items.css' %}">
+</head>
+<body>
+    <aside>
+        <h4>Об авторе</h4>
+    </aside>
+    <main>
+        <div title="this is alias"><p>Имя:<b> {{ name }} </b></p>  </div>
+        <div><p> Фамилия: <b>{{ surname }} </b> <br></p> </div>
+        <div><p> email: <b> {{ email }} </b> </p></div>
+    </main>
+</body>
+</html>
